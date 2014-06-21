@@ -12,6 +12,8 @@ To install the script, download it from github (provide a link) into the working
 
 NOTE: it is ABSOLUTELY necessary that the .zip file containing the Samsung data be in the working directory of the R script as well. If not, it won't work!
 
+Also note that you MUST ABSOLUTELY use the original .zip file provided in the link in the assignment page.
+
 You can run the script by sourcing the file "run_analysis.R" and calling the only function contained in it called "run_analysis()".
 
 #Running the code
@@ -54,6 +56,12 @@ After this is done, the code repeats steps 3 to 7 with the test data and merges 
 
 Then, the script calculates the mean value for each variable for each activity for each subject. This data is then written to another file called "tidy_data.csv" which has been uploaded to the github repository.
 
+
+## Results
+Once the script is done running, please look in your working directory. You should see that the .zip file with the Samsung data was decompressed. You will also see 2 .csv files:
+
+1.- complete_data.csv: the original data is provided, joining both the training and the test data
+2.- tidy_data.csv: the tidy data set is provided as a .csv file for viewing with a spreadsheet program or directly in R.
 
 #Codebook
 For more information on the data regarding the original dataset please refer to the file "features_info.txt" in the .zip file with the Samsung data.
