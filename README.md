@@ -28,7 +28,7 @@ The function will unzip the data inside the compressed file and process it. Make
 
 #What does the code do?
 
-##The Samsung data is split into a training data set and a test data set. Both data sets have the same basic structure:
+The Samsung data is split into a training data set and a test data set. Both data sets have the same basic structure:
 
 1.- One file that contains a numeric ID of the test subject
 2.- One file that contains the activity the subject was carrying out when the data was collected
@@ -50,7 +50,7 @@ NOTE: there are different amounts of columns for the 3 training and test files, 
 2.- Activity file: activity the test subject referred to in the subject file was carrying out
 3.- Data file: data for the activity described in point 2.
 
-##After this is done, the code repeats steps 3 to 7 with the test data and merges all of the data from the test and training set into one data frame. This data is printed out to a file called "complete_data.csv".
+After this is done, the code repeats steps 3 to 7 with the test data and merges all of the data from the test and training set into one data frame. This data is printed out to a file called "complete_data.csv".
 
 Then, the script calculates the mean value for each variable for each activity for each subject. This data is then written to another file called "tidy_data.csv" which has been uploaded to the github repository.
 
