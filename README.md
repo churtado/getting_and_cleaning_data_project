@@ -11,7 +11,7 @@ Please note that the data in the tidy_dataset.csv file is not ordered by subject
 
 Also note that the tidy_dataset.csv file conserves the names of the original measures as found in the "features.txt" file. This was done to avoid having lenthy names, such as "activity and subject mean of variable XYZ".
 
-Finally, please note that the Code Book is included in this file.
+Finally, please note that the Code Book is included in this repository with the necessary modifications.
 
 #Installation
 To install the script, download it from github (provide a link) into the working directory of your installation of R.
@@ -72,7 +72,7 @@ Once the script is done running, please look in your working directory. You shou
 2.- tidy_data.csv: the tidy data set is provided as a .csv file for viewing with a spreadsheet program or directly in R.  
 
 #Codebook
-For more information on the data regarding the original dataset please refer to the file "features_info.txt" in the .zip file with the Samsung data.
+For more information on the data regarding the original dataset please refer to the file "Codebook.md" available in this repository.
 
 * SUBJECT_ID: unique identifier for the test subject
 * ACTIVITY: textual description of the activity the subject was carrying out when the data was recorded.
