@@ -2,7 +2,7 @@ Getting and Cleaning Data: Course Project
 =========================================
 
 #Description
-The following is a script that does bla bla bla (high level)
+This repository contains a scrit that processes Samsung data and turns it into a tidy data set.
 
 #Disclaimer
 The description of this project was left intentionally ambiguous, so I would ask that you please take that into consideration. On my part, I will be as detailed and explicit in explaining what the code does.
