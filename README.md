@@ -38,25 +38,25 @@ Make sure the unzip() function is available in your installation of R in case of
 
 The Samsung data is split into a training data set and a test data set. Both data sets have the same basic structure:
 
-1.- One file that contains a numeric ID of the test subject<!--BREAK-->
-2.- One file that contains the activity the subject was carrying out when the data was collected<!--BREAK-->
+1.- One file that contains a numeric ID of the test subject  
+2.- One file that contains the activity the subject was carrying out when the data was collected  
 3.- One file that contains the data itself
 
 ## The code does the following:
 
-1.- Decompress the .zip file. There will be several folders created for the test and training data.
-2.- Read the "features.txt" file to get the names of the variables in our data set.
-3.- Obtains the full path of the training files
-4.- Reads the training data file and filters out the unwanted measures (we only want means and standard deviations)
-5.- Reads the subject ID file
-6.- Reads the activities file.
-7.- Translates the activities data into text so that the end user can easily tell what activity was being carried out by the test subject
-
+1.- Decompress the .zip file. There will be several folders created for the test and training data.  
+2.- Read the "features.txt" file to get the names of the variables in our data set.  
+3.- Obtains the full path of the training files.  
+4.- Reads the training data file and filters out the unwanted measures (we only want means and standard deviations).  
+5.- Reads the subject ID file.  
+6.- Reads the activities file.  
+7.- Translates the activities data into text so that the end user can easily tell what activity was being carried out by the test subject.  
+  
 NOTE: there are different amounts of columns for the 3 training and test files, but they have the same amount of rows. I am assuming that each row in each file refers to the same data point. For example, the third row for each of the three files will give me the following information:
 
-1.- Subject file: subject being tested in the third data point
-2.- Activity file: activity the test subject referred to in the subject file was carrying out
-3.- Data file: data for the activity described in point 2.
+1.- Subject file: subject being tested in the third data point.  
+2.- Activity file: activity the test subject referred to in the subject file was carrying out.  
+3.- Data file: data for the activity described in point 2.  
 
 After this is done, the code repeats steps 3 to 7 with the test data and merges all of the data from the test and training set into one data frame. This data is printed out to a file called "complete_data.csv".
 
@@ -66,8 +66,8 @@ Then, the script calculates the mean value for each variable for each activity f
 ## Results
 Once the script is done running, please look in your working directory. You should see that the .zip file with the Samsung data was decompressed. You will also see 2 .csv files:
 
-1.- complete_data.csv: the original data is provided, joining both the training and the test data
-2.- tidy_data.csv: the tidy data set is provided as a .csv file for viewing with a spreadsheet program or directly in R.
+1.- complete_data.csv: the original data is provided, joining both the training and the test data.  
+2.- tidy_data.csv: the tidy data set is provided as a .csv file for viewing with a spreadsheet program or directly in R.  
 
 #Codebook
 For more information on the data regarding the original dataset please refer to the file "features_info.txt" in the .zip file with the Samsung data.
