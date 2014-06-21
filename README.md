@@ -38,8 +38,8 @@ Make sure the unzip() function is available in your installation of R in case of
 
 The Samsung data is split into a training data set and a test data set. Both data sets have the same basic structure:
 
-1.- One file that contains a numeric ID of the test subject
-2.- One file that contains the activity the subject was carrying out when the data was collected
+1.- One file that contains a numeric ID of the test subject<!--BREAK-->
+2.- One file that contains the activity the subject was carrying out when the data was collected<!--BREAK-->
 3.- One file that contains the data itself
 
 ## The code does the following:
