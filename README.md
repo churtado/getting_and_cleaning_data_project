@@ -25,7 +25,9 @@ then you must call the function in the following way:
 
 run_analysis("getdata-projectfiles-UCI HAR Dataset.zip")
 
-The function will unzip the data inside the compressed file and process it. Make sure the unzip() function is available in your installation of R in case of any error.
+The function will unzip the data inside the compressed file and process it. 
+WARNING: If the file was already decompressed, the script will decompress it again and overwrite the files.
+Make sure the unzip() function is available in your installation of R in case of any error.
 
 
 #What does the code do?
