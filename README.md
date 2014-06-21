@@ -11,6 +11,8 @@ Please note that the data in the tidy_dataset.csv file is not ordered by subject
 
 Also note that the tidy_dataset.csv file conserves the names of the original measures as found in the "features.txt" file. This was done to avoid having lenthy names, such as "activity and subject mean of variable XYZ".
 
+Finally, please note that the Code Book is included in this file.
+
 #Installation
 To install the script, download it from github (provide a link) into the working directory of your installation of R.
 
