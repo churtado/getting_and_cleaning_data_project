@@ -77,7 +77,6 @@ run_analysis <- function(filename) {
   #Exporting the data
   write.csv(completeData, file="complete_data.csv")
 
-  print("entering loop")
   #Generating tidy data
   
   subjects <- unique(completeData$SUBJECT_ID)
@@ -98,7 +97,6 @@ run_analysis <- function(filename) {
       averageData <- within(activityData, rm("SUBJECT_ID"))
       averageData <- within(averageData, rm("ACTIVITY"))
       
-      print(averageData)
       for(m in 1:ncol(averageData)){
         
         data <- na.omit(averageData[,m])
